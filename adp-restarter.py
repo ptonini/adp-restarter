@@ -29,7 +29,7 @@ def main():
     parser.add_argument('-f', dest='logfile', type=str, default='logs.zip', help='Log archive')
     args = parser.parse_args(sys.argv[1:])
 
-    count = 0
+    count = 00
     for root, path, files in os.walk(args.dir):
         for file in files:
             if re.match(args.pattern, file):
